@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HiddenSubform Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js.js"></script>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hidden_subform">
+            <h3>Inline hidden values</h3>
+            <p>This first example shows how the dom elements are displayed and hidden based on the selection.</p>
+            <select class="subform_activate" name="inline_select">
+                <option value="1" rel=".option_1">Option 1</option>
+                <option value="2" rel=".option_2">Option 2</option>
+            </select>
+            <div class="option_1">
+                <p>Option #1 is selected.</p>
+            </div>
+            <div class="option_2">
+                <p>Option #2 is selected.</p>
+            </div>
+        </div>
+        <div class="hidden_subform">
+            <p>This second example shows how the dom is populated via AJAX.</p>
+            <select class="subform_activate" name="ajax_select" rel="{'url':'callback.php','target':'.subform_callback'}">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            <div class="subform_callback"></div>
+        </div>
+    </body>
+</html>

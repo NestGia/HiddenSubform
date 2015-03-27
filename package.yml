@@ -1,0 +1,12 @@
+name: "HiddenSubform"
+
+description: "Activates/dactivates a subform based on the value of a radio or select element"
+
+author: jdavidbakr
+
+category: Interface
+
+tags: [form]
+
+sources:
+  - "Source/HiddenSubform.js"
